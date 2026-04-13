@@ -59,46 +59,46 @@ export default function Portfolio() {
     { name: "React.js / Frontend", icon: Globe, color: "text-blue-500" },
     { name: "Node.js / PHP / Backend", icon: Database, color: "text-green-500" },
     { name: "Python", icon: Code2, color: "text-yellow-500" },
-    { name: "AI Integration", icon: Cpu, color: "text-purple-500" },
-    { name: "Prompt Engineering", icon: Search, color: "text-pink-500" },
-    { name: "AWS / Server Config", icon: Globe, color: "text-orange-500" },
+    { name: language === 'en' ? "AI Integration" : "Intégration IA", icon: Cpu, color: "text-purple-500" },
+    { name: language === 'en' ? "Prompt Engineering" : "Ingénierie des Prompts", icon: Search, color: "text-pink-500" },
+    { name: language === 'en' ? "AWS / Server Config" : "AWS / Configuration de Serveurs", icon: Globe, color: "text-orange-500" },
     { name: "Tailwind CSS", icon: Code2, color: "text-cyan-500" },
   ];
 
   const projects = [
     {
       title: "Frenmot",
-      description: "Personalized French learning companion application.",
-      tech: ["Web Application"],
+      description: language === 'en' ? "Personalized French learning companion application." : "Application accompagnatrice personnalisée pour l'apprentissage du français.",
+      tech: language === 'en' ? ["Web Application"] : ["Application Web"],
       link: "#"
     },
     {
       title: "Kaj - Task Reminder",
-      description: "Engineered a web and Android application using Flutter and Dart featuring custom reminders and cross-platform syncing capabilities.",
+      description: language === 'en' ? "Engineered a web and Android application using Flutter and Dart featuring custom reminders and cross-platform syncing capabilities." : "Développement d'une application web et Android avec Flutter et Dart, incluant des rappels personnalisés et une synchronisation multiplateforme.",
       tech: ["Flutter", "Dart", "Android", "Web"],
       link: "#"
     },
     {
       title: "Atmoxis",
-      description: "Production-quality weather web app focused on premium UX, atmospheric visuals, and practical weather intelligence.",
-      tech: ["Web App", "UX/UI"],
+      description: language === 'en' ? "Production-quality weather web app focused on premium UX, atmospheric visuals, and practical weather intelligence." : "Application web météo de qualité production, axée sur une interface utilisateur premium, des visuels atmosphériques et des informations météorologiques pratiques.",
+      tech: language === 'en' ? ["Web App", "UX/UI"] : ["Application Web", "UX/UI"],
       link: "#"
     },
     {
       title: "ScreenDusk",
-      description: "Created a lightweight Windows desktop app that applies a software dimming overlay across one or multiple monitors for privacy/low-light usage.",
-      tech: ["Windows Desktop App", "C#"],
+      description: language === 'en' ? "Created a lightweight Windows desktop app that applies a software dimming overlay across one or multiple monitors for privacy/low-light usage." : "Création d'une application de bureau Windows légère appliquant un filtre d'assombrissement logiciel sur un ou plusieurs écrans pour la confidentialité ou une utilisation en faible luminosité.",
+      tech: language === 'en' ? ["Windows Desktop App", "C#"] : ["Application de bureau Windows", "C#"],
       link: "#"
     },
     {
       title: "Classic Snake",
-      description: "Modern, highly-polished web implementation of the classic Snake arcade game using raw HTML5 Canvas, CSS3, and JS.",
+      description: language === 'en' ? "Modern, highly-polished web implementation of the classic Snake arcade game using raw HTML5 Canvas, CSS3, and JS." : "Implémentation web moderne et très soignée du jeu d'arcade classique Snake en utilisant HTML5 Canvas, CSS3 et JS pur.",
       tech: ["HTML5 Canvas", "CSS3", "JavaScript"],
       link: "#"
     },
     {
       title: "3D Decision Maker",
-      description: "Beautifully designed 3D interactive tool completely with HTML, CSS, and JS. Utilizes true cryptographically secure randomness.",
+      description: language === 'en' ? "Beautifully designed 3D interactive tool completely with HTML, CSS, and JS. Utilizes true cryptographically secure randomness." : "Outil interactif 3D magnifiquement conçu, entièrement avec HTML, CSS et JS. Utilise une véritable composante aléatoire cryptographiquement sécurisée.",
       tech: ["HTML", "CSS", "3D JavaScript"],
       link: "#"
     }
@@ -106,49 +106,49 @@ export default function Portfolio() {
 
   const workExperience = [
     {
-      role: "Freelance Video Editor",
-      company: "Self-Employed",
+      role: language === 'en' ? "Freelance Video Editor" : "Monteur Vidéo Freelance",
+      company: language === 'en' ? "Self-Employed" : "Indépendant",
       period: "2020 - 2025",
-      description: "Managed video post-production pipelines for diverse local and international clients. Coordinated projects efficiently across various global time zones and applied specialized sales techniques.",
+      description: language === 'en' ? "Managed video post-production pipelines for diverse local and international clients. Coordinated projects efficiently across various global time zones and applied specialized sales techniques." : "Gestion des chaînes de post-production vidéo pour divers clients locaux et internationaux. Coordination efficace des projets à travers différents fuseaux horaires mondiaux et application de techniques de vente spécialisées.",
     },
     {
-      role: "Private Tutor",
-      company: "Mathematics, Physics, and English",
+      role: language === 'en' ? "Private Tutor" : "Professeur Particulier",
+      company: language === 'en' ? "Mathematics, Physics, and English" : "Mathématiques, Physique et Anglais",
       period: "2023 - 2025",
-      description: "Delivered formal and professional academic instruction across multiple core disciplines. Leveraged a deep, thorough grasp of complex concepts.",
+      description: language === 'en' ? "Delivered formal and professional academic instruction across multiple core disciplines. Leveraged a deep, thorough grasp of complex concepts." : "Prestation d'enseignement académique formel et professionnel dans plusieurs disciplines fondamentales. Mise à profit d'une compréhension approfondie de concepts complexes.",
     },
     {
-      role: "Delivery Courier",
+      role: language === 'en' ? "Delivery Courier" : "Livreur",
       company: "Stuart",
       period: "2025",
-      description: "Managed on-demand delivery logistics across Paris, France, utilizing the Stuart application ecosystem.",
+      description: language === 'en' ? "Managed on-demand delivery logistics across Paris, France, utilizing the Stuart application ecosystem." : "Gestion de la logistique des livraisons à la demande à Paris, France, en utilisant l'écosystème de l'application Stuart.",
     },
   ];
 
   const education = [
     {
-      degree: "Bachelors of Computer Science",
+      degree: language === 'en' ? "Bachelors of Computer Science" : "Licence en Informatique",
       institution: "Epita - School of Engineering and Computer Science, Paris",
-      period: "Sept 2025 - 2028",
-      description: "Relevant Coursework: Prompt Engineering.",
+      period: language === 'en' ? "Sept 2025 - 2028" : "Sept 2025 - 2028",
+      description: language === 'en' ? "Relevant Coursework: Prompt Engineering." : "Cours pertinents : Ingénierie des Prompts.",
     },
     {
       degree: "Diplôme Universitaire d’Études Françaises (DUEF)",
       institution: "Université Savoie Mont Blanc, Chambéry",
-      period: "Sept 2024 - April 2025",
-      description: "Levels A1-30ECTS and A2-30ECTS completed.",
+      period: language === 'en' ? "Sept 2024 - April 2025" : "Sept 2024 - Avril 2025",
+      description: language === 'en' ? "Levels A1-30ECTS and A2-30ECTS completed." : "Niveaux A1-30ECTS et A2-30ECTS validés.",
     },
     {
       degree: "Cambridge A'Level",
       institution: "Academia, Dhaka, Bangladesh",
       period: "2023 - 2024",
-      description: "Higher Secondary Education.",
+      description: language === 'en' ? "Higher Secondary Education." : "Enseignement secondaire supérieur.",
     },
     {
       degree: "Cambridge O'Level",
       institution: "BACHA English Medium School, Dhaka",
       period: "2021",
-      description: "Secondary Education.",
+      description: language === 'en' ? "Secondary Education." : "Enseignement secondaire.",
     }
   ];
 
@@ -164,20 +164,29 @@ export default function Portfolio() {
         <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="z-10 w-1/4 flex items-center gap-4">
             <div className="font-bold text-xl tracking-tight">JD<span className="text-blue-500">.</span></div>
-            <div className={`hidden sm:flex items-center text-[10px] font-bold rounded-full border p-[2px] ${isDark ? "bg-slate-900/80 border-slate-800" : "bg-white/80 border-slate-200"} shadow-sm`}>
-              <button onClick={() => setLanguage("en")} className={`px-2 py-1 rounded-full transition-all ${language === 'en' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'}`}>EN</button>
-              <button onClick={() => setLanguage("fr")} className={`px-2 py-1 rounded-full transition-all ${language === 'fr' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'}`}>FR</button>
-            </div>
           </div>
           <div className="hidden md:flex items-center justify-center space-x-8 text-sm font-medium z-10 w-2/4">
-            <a href="#about" className="hover:text-blue-500 transition-colors">About</a>
-            <a href="#skills" className="hover:text-blue-500 transition-colors">Skills</a>
-            <a href="#projects" className="hover:text-blue-500 transition-colors">Projects</a>
-            <a href="#journey" className="hover:text-blue-500 transition-colors">Journey</a>
+            <a href="#about" className="hover:text-blue-500 transition-colors">{language === 'en' ? 'About' : 'À propos'}</a>
+            <a href="#skills" className="hover:text-blue-500 transition-colors">{language === 'en' ? 'Skills' : 'Compétences'}</a>
+            <a href="#projects" className="hover:text-blue-500 transition-colors">{language === 'en' ? 'Projects' : 'Projets'}</a>
+            <a href="#journey" className="hover:text-blue-500 transition-colors">{language === 'en' ? 'Journey' : 'Parcours'}</a>
           </div>
-          <div className="flex items-center justify-end space-x-6 z-10 w-1/4 h-full relative">
-            <a href="#contact" className="px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors relative z-20">
-              Get in touch
+            <div className="flex items-center justify-end space-x-4 z-10 w-1/4 h-full relative">
+              <button 
+                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                className={`relative flex items-center w-[4.5rem] h-8 rounded-full p-1 transition-colors duration-300 ${isDark ? "bg-slate-900 border border-slate-700 shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]" : "bg-slate-200 border border-slate-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)]"}`}
+                aria-label="Toggle language"
+              >
+                <div className={`absolute left-1 w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center text-[10px] font-bold ${isDark ? "bg-blue-600 text-white" : "bg-white text-slate-800"} ${language === 'fr' ? "translate-x-8" : "translate-x-0"}`}>
+                  {language === 'en' ? 'EN' : 'FR'}
+                </div>
+                <div className={`absolute inset-0 w-full flex items-center justify-between px-3 text-[10px] font-bold uppercase tracking-wider pointer-events-none ${isDark ? "text-slate-500" : "text-slate-400"}`}>
+                  <span className={`transition-opacity duration-300 ${language === 'en' ? "opacity-0" : "opacity-100"}`}>EN</span>
+                  <span className={`transition-opacity duration-300 ${language === 'fr' ? "opacity-0" : "opacity-100"}`}>FR</span>
+                </div>
+              </button>
+              <a href="#contact" className="px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors relative z-20 whitespace-nowrap">
+              {language === 'en' ? 'Get in touch' : 'Contactez-moi'}
             </a>
             {/* Hanging theme switcher */}
             <div className="absolute top-6 -right-6 md:-right-16 lg:-right-24 xl:-right-32 h-32 pointer-events-auto -z-10">
@@ -208,7 +217,10 @@ export default function Portfolio() {
                 Justin <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">D'COSTA</span>
               </h1>
               <p className={`text-lg leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}>
-                I am a Full Stack Developer specializing in highly interactive web applications and robust cloud architectures. By combining modern front-end ecosystems with reliable backend infrastructure, I transform complex problems into seamless digital experiences.
+                {language === 'en' 
+                  ? 'I am a Full Stack Developer specializing in highly interactive web applications and robust cloud architectures. By combining modern front-end ecosystems with reliable backend infrastructure, I transform complex problems into seamless digital experiences.'
+                  : 'Je suis un développeur Full Stack spécialisé dans les applications web hautement interactives et les architectures cloud robustes. En combinant des environnements front-end modernes avec une infrastructure back-end fiable, je transforme des problèmes complexes en expériences numériques fluides.'
+                }
               </p>
             </motion.div>
             
@@ -248,8 +260,10 @@ export default function Portfolio() {
         {/* Skills Section */}
         <section id="skills" className="space-y-12 scroll-mt-24">
           <div className="text-center space-y-4">
-             <h2 className="text-3xl font-bold">Technical Arsenal</h2>
-             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>Core technologies I work with on a daily basis.</p>
+             <h2 className="text-3xl font-bold">{language === 'en' ? 'Technical Arsenal' : 'Arsenal Technique'}</h2>
+             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>
+               {language === 'en' ? 'Core technologies I work with on a daily basis.' : 'Les technologies principales avec lesquelles je travaille au quotidien.'}
+             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
@@ -271,8 +285,10 @@ export default function Portfolio() {
         {/* Projects Section */}
         <section id="projects" className="space-y-12 scroll-mt-24">
           <div className="text-center space-y-4">
-             <h2 className="text-3xl font-bold">Featured Projects</h2>
-             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>Some of my recent work that showcases my technical capabilities.</p>
+             <h2 className="text-3xl font-bold">{language === 'en' ? 'Featured Projects' : 'Projets Phares'}</h2>
+             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>
+               {language === 'en' ? 'Some of my recent work that showcases my technical capabilities.' : 'Quelques-uns de mes travaux récents qui mettent en valeur mes capacités techniques.'}
+             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, idx) => (
@@ -303,8 +319,10 @@ export default function Portfolio() {
         {/* Separated Journey Section */}
         <section id="journey" className="space-y-12 max-w-4xl mx-auto scroll-mt-24">
           <div className="text-center space-y-4">
-             <h2 className="text-3xl font-bold">My Journey</h2>
-             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>Professional experience and educational background.</p>
+             <h2 className="text-3xl font-bold">{language === 'en' ? 'My Journey' : 'Mon Parcours'}</h2>
+             <p className={`max-w-2xl mx-auto ${isDark ? "text-slate-400" : "text-slate-600"}`}>
+               {language === 'en' ? 'Professional experience and educational background.' : 'Expérience professionnelle et parcours éducatif.'}
+             </p>
           </div>
           
           <div className="flex justify-center gap-4 mb-8">
@@ -312,13 +330,13 @@ export default function Portfolio() {
               onClick={() => setActiveJourneyTab("work")}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${activeJourneyTab === "work" ? "bg-blue-600 text-white shadow-lg shadow-blue-500/25" : isDark ? "bg-slate-900 text-slate-400 hover:bg-slate-800" : "bg-white text-slate-600 hover:bg-slate-100"}`}
             >
-              <Briefcase size={18} /> Experience
+              <Briefcase size={18} /> {language === 'en' ? 'Experience' : 'Expérience'}
             </button>
             <button
               onClick={() => setActiveJourneyTab("education")}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${activeJourneyTab === "education" ? "bg-purple-600 text-white shadow-lg shadow-purple-500/25" : isDark ? "bg-slate-900 text-slate-400 hover:bg-slate-800" : "bg-white text-slate-600 hover:bg-slate-100"}`}
             >
-              <GraduationCap size={18} /> Education
+              <GraduationCap size={18} /> {language === 'en' ? 'Education' : 'Formation'}
             </button>
           </div>
 
@@ -383,8 +401,10 @@ export default function Portfolio() {
         {/* Contact Section */}
         <section id="contact" className="space-y-8 max-w-2xl mx-auto scroll-mt-24 pt-8">
           <div className="text-center space-y-3">
-             <h2 className="text-3xl font-bold">Get In Touch</h2>
-             <p className={`max-w-xl mx-auto text-sm ${isDark ? "text-slate-400" : "text-slate-600"}`}>Have a project in mind or just want to say hi? Send me a message and I'll get back to you as soon as possible.</p>
+             <h2 className="text-3xl font-bold">{language === 'en' ? 'Get In Touch' : 'Contactez-moi'}</h2>
+             <p className={`max-w-xl mx-auto text-sm ${isDark ? "text-slate-400" : "text-slate-600"}`}>
+               {language === 'en' ? "Have a project in mind or just want to say hi? Send me a message and I'll get back to you as soon as possible." : "Vous avez un projet en tête ou vous voulez juste dire bonjour ? Envoyez-moi un message et je vous répondrai dès que possible."}
+             </p>
           </div>
           <form 
             action="mailto:contact@justindcosta.dev" 
@@ -394,20 +414,26 @@ export default function Portfolio() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="flex flex-col gap-1.5">
-                <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>Name</label>
-                <input type="text" name="Name" required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder="Name" />
+                <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+                  {language === 'en' ? 'Name' : 'Nom'}
+                </label>
+                <input type="text" name="Name" required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder={language === 'en' ? 'Name' : 'Nom'} />
               </div>
               <div className="flex flex-col gap-1.5">
-                <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>Email</label>
-                <input type="email" name="Email" required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder="Email" />
+                <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+                  {language === 'en' ? 'Email' : 'E-mail'}
+                </label>
+                <input type="email" name="Email" required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder={language === 'en' ? 'Email' : 'E-mail'} />
               </div>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>Message</label>
-              <textarea name="Message" rows={4} required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder="How can I help you?"></textarea>
+              <label className={`text-sm font-medium ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+                {language === 'en' ? 'Message' : 'Message'}
+              </label>
+              <textarea name="Message" rows={4} required className={`px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none ${isDark ? "bg-slate-800/50 border-slate-700 text-white placeholder-slate-500" : "bg-white border-slate-300 text-slate-900 placeholder-slate-400"}`} placeholder={language === 'en' ? 'How can I help you?' : 'Comment puis-je vous aider ?'}></textarea>
             </div>
             <button type="submit" className={`w-full py-3 mt-2 rounded-lg font-medium transition-colors border ${isDark ? "bg-slate-100 text-slate-900 hover:bg-slate-200 border-transparent" : "bg-slate-900 text-white hover:bg-slate-800 border-transparent"}`}>
-              Send Message
+              {language === 'en' ? 'Send Message' : 'Envoyer le message'}
             </button>
           </form>
         </section>
