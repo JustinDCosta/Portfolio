@@ -1,0 +1,113 @@
+## Justin D'COSTA
+Student
+
+**Contact Information**
+* **Phone:** +33764814045
+* **Email:** justindcosta1202@gmail.com
+* **Location:** 37 Avenue Berlioz, 93270 Sevran, France
+* **Date of Birth:** 04/04/2004
+
+---
+
+## Skills & Technical Expertise
+
+**Web Operations & Infrastructure**
+* Hosting & Server Management: cPanel/WHM, Plesk, Linux CLI (Command Line), AWS (EC2/S3 Essentials), FTP/SFTP.
+* Maintenance & Security: SSL Certificate Installation (Let's Encrypt), Malware Removal (Wordfence/Sucuri), Automated Backups & Disaster Recovery, DNS Management (Cloudflare/Records).
+* Cloud Infrastructure: Experienced in cloud computing, server hosting, and managing complete web applications with thorough testing and security protocols.
+* CMS Management: WordPress (Theme/Plugin Troubleshooting), Shopify (Store Management), Webflow.
+
+**Development Stack**
+* Frontend: HTML5, CSS3 (Flexbox/Grid), Tailwind CSS, JavaScript (ES6+), React.js.
+* Backend: PHP (Maintenance/Scripting), Node.js, SQL (MySQL/MariaDB management), Python, and Firebase.
+* Version Control: Git and GitHub for advanced branching and merging operations.
+
+**Artificial Intelligence & Prompt Engineering**
+* AI Systems Integration: Expert-level proficiency in interacting with and directing generative AI models.
+* Prompt Engineering: Advanced capabilities in crafting effective prompts, backed by formal university coursework.
+* LLM Optimization: Proven ability to efficiently utilize and maximize token usage within Large Language Models.
+
+**Technical Marketing & Growth**
+* Analytics & Tracking: Google Analytics 4 (GA4), Google Tag Manager (GTM), Meta Pixel & CAPI Integration.
+* Search Engine Optimization: Technical SEO, Schema Markup, XML Sitemaps, PageSpeed Optimization (Core Web Vitals).
+* Digital Growth: Execution of social media advertising campaigns and strategic technical marketing.
+
+**Content Tech & Additional Skills**
+* Video Editing & Post-Production: Advanced proficiency in Adobe Premiere Pro, Adobe After Effects, and DaVinci Pro.
+* Asset Design: Skilled in Adobe Photoshop and Canva for graphic optimization and digital design.
+
+**Professional Operations**
+* Methodologies: Agile/Scrum, Client Technical Support, and Ticket Management.
+* Client Relations: Experienced in local and international client handling, including cross-timezone communication.
+* Business Acumen: Specialized skill in effectively selling technical services and digital products.
+
+---
+
+## Professional Experience
+
+**Freelance Video Editor** (2020 - 2025)
+* Managed video post-production pipelines for diverse local and international clients.
+* Coordinated projects efficiently across various global time zones.
+* Applied specialized sales techniques to pitch and sell freelance services effectively.
+
+**Private Tutor - Mathematics, Physics, and English** (2023 - 2025)
+* Delivered formal and professional academic instruction across multiple core disciplines.
+* Leveraged a deep, thorough grasp of complex concepts to effectively educate and communicate with students.
+
+**Delivery Courier - Stuart** (2025)
+* Managed on-demand delivery logistics across Paris, France, utilizing the Stuart application ecosystem.
+
+---
+
+## Education
+
+**Epita - School of Engineering and Computer Science** (Sept 2025 - 2028)
+* Bachelors of Computer Science, Paris, France.
+* Relevant Coursework: Prompt Engineering.
+
+**Université Savoie Mont Blanc** (Sept 2024 - April 2025)
+* Diplôme Universitaire d’Études Françaises (DUEF), Chambéry, France.
+* Levels A1-30ECTS and A2-30ECTS completed.
+
+**Academia - Cambridge A'Level** (2023 - 2024)
+* Dhaka, Bangladesh.
+
+**Alliance Français - French A1** (2022)
+* Dhaka, Bangladesh.
+
+**BACHA English Medium School - Cambridge O'Level** (2021)
+* Dhaka, Bangladesh.
+
+---
+
+## Projects
+
+**Frenmot**
+* Developed a personal French learning companion application.
+
+**Kaj - Task Reminder**
+* Engineered a web and Android application using Flutter and Dart featuring custom reminders and cross-platform syncing capabilities.
+
+**ScreenDusk**
+* Created a lightweight Windows desktop app that applies a software dimming overlay across one or multiple monitors.
+* Designed specifically for privacy-focused screen usage in public spaces and low-light comfort scenarios.
+
+**3D Decision Maker**
+* Built a beautifully designed, 3D interactive tool entirely with HTML, CSS, and JavaScript.
+* Programmed a custom 3D lever mechanism that utilizes true, cryptographically secure randomness to provide definitive answers.
+
+**Atmoxis**
+* Developed a production-quality weather web app focused on premium UX, atmospheric visuals, and practical weather intelligence.
+
+**Classic Snake**
+* Designed a modern, highly-polished web implementation of the classic Snake arcade game.
+* Built from the ground up using raw HTML5 Canvas, CSS3, and JavaScript to ensure a deeply embedded, buttery-smooth experience across desktop and mobile devices.
+
+---
+
+## Languages
+
+* **Bangla:** Langue Maternelle
+* **Anglais:** Bilingue
+* **Français:** B1
+* **Hindi et Urdu:** Conversationnel
