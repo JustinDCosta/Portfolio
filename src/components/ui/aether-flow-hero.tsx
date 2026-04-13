@@ -141,9 +141,9 @@ export const AetherFlowHero = ({ children }: { children?: React.ReactNode }) => 
     }, []);
 
     return (
-        <div className="relative w-full h-[100vh] overflow-hidden bg-background">
-            <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-60"></canvas>
-            <div className="relative z-10 h-full w-full">
+        <div className="relative w-full min-h-screen bg-background">
+            <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-30 z-0"></canvas>
+            <div className="relative z-10 w-full">
                 {children}
             </div>
         </div>
