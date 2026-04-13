@@ -23,6 +23,7 @@ import { useTheme } from "next-themes";
 
 export default function Portfolio() {
   const [mounted, setMounted] = useState(false);
+  const [language, setLanguage] = useState<"en" | "fr">("en");
   const { theme, systemTheme } = useTheme();
 
   React.useEffect(() => {
@@ -161,7 +162,13 @@ export default function Portfolio() {
       {/* Top Navbar */}
       <nav className={`fixed top-0 w-full z-50 border-b backdrop-blur-sm transition-colors ${isDark ? "bg-slate-950/40 border-slate-800/50" : "bg-white/40 border-slate-200/50"}`}>
         <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="font-bold text-xl tracking-tight z-10 w-1/4">JD<span className="text-blue-500">.</span></div>
+          <div className="z-10 w-1/4 flex items-center gap-4">
+            <div className="font-bold text-xl tracking-tight">JD<span className="text-blue-500">.</span></div>
+            <div className={`hidden sm:flex items-center text-[10px] font-bold rounded-full border p-[2px] ${isDark ? "bg-slate-900/80 border-slate-800" : "bg-white/80 border-slate-200"} shadow-sm`}>
+              <button onClick={() => setLanguage("en")} className={`px-2 py-1 rounded-full transition-all ${language === 'en' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'}`}>EN</button>
+              <button onClick={() => setLanguage("fr")} className={`px-2 py-1 rounded-full transition-all ${language === 'fr' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'}`}>FR</button>
+            </div>
+          </div>
           <div className="hidden md:flex items-center justify-center space-x-8 text-sm font-medium z-10 w-2/4">
             <a href="#about" className="hover:text-blue-500 transition-colors">About</a>
             <a href="#skills" className="hover:text-blue-500 transition-colors">Skills</a>
@@ -413,7 +420,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="font-bold text-2xl tracking-tight">JD<span className="text-blue-500">.</span></div>
             <p className={`text-sm ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-              Building the future of the web.
+              {language === 'en' ? 'Crafting the web one pixel at a time. Fueled by espresso and an irrational love for problem-solving.' : 'Construire le web, un pixel à la fois. Propulsé par un expresso et un amour irrationnel pour les défis.'}
             </p>
           </div>
 
