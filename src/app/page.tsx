@@ -72,37 +72,37 @@ export default function Portfolio() {
       title: "Frenmot",
       description: language === 'en' ? "Personalized French learning companion application." : "Application accompagnatrice personnalisée pour l'apprentissage du français.",
       tech: language === 'en' ? ["Web Application"] : ["Application Web"],
-      link: "#"
+      link: "https://frenmot.web.app/"
     },
     {
       title: "Kaj - Task Reminder",
       description: language === 'en' ? "Engineered a web and Android application using Flutter and Dart featuring custom reminders and cross-platform syncing capabilities." : "Développement d'une application web et Android avec Flutter et Dart, incluant des rappels personnalisés et une synchronisation multiplateforme.",
       tech: ["Flutter", "Dart", "Android", "Web"],
-      link: "#"
+      link: "https://task-reminder-app-2d1fa.web.app/"
     },
     {
       title: "Atmoxis",
       description: language === 'en' ? "Production-quality weather web app focused on premium UX, atmospheric visuals, and practical weather intelligence." : "Application web météo de qualité production, axée sur une interface utilisateur premium, des visuels atmosphériques et des informations météorologiques pratiques.",
       tech: language === 'en' ? ["Web App", "UX/UI"] : ["Application Web", "UX/UI"],
-      link: "#"
+      link: "https://atmoxis.vercel.app/"
     },
     {
       title: "ScreenDusk",
       description: language === 'en' ? "Created a lightweight Windows desktop app that applies a software dimming overlay across one or multiple monitors for privacy/low-light usage." : "Création d'une application de bureau Windows légère appliquant un filtre d'assombrissement logiciel sur un ou plusieurs écrans pour la confidentialité ou une utilisation en faible luminosité.",
       tech: language === 'en' ? ["Windows Desktop App", "C#"] : ["Application de bureau Windows", "C#"],
-      link: "#"
+      link: "https://github.com/JustinDCosta/ScreenDusk"
     },
     {
       title: "Classic Snake",
       description: language === 'en' ? "Modern, highly-polished web implementation of the classic Snake arcade game using raw HTML5 Canvas, CSS3, and JS." : "Implémentation web moderne et très soignée du jeu d'arcade classique Snake en utilisant HTML5 Canvas, CSS3 et JS pur.",
       tech: ["HTML5 Canvas", "CSS3", "JavaScript"],
-      link: "#"
+      link: "https://classic-game-of-snake.web.app/"
     },
     {
       title: "3D Decision Maker",
       description: language === 'en' ? "Beautifully designed 3D interactive tool completely with HTML, CSS, and JS. Utilizes true cryptographically secure randomness." : "Outil interactif 3D magnifiquement conçu, entièrement avec HTML, CSS et JS. Utilise une véritable composante aléatoire cryptographiquement sécurisée.",
       tech: ["HTML", "CSS", "3D JavaScript"],
-      link: "#"
+      link: "https://minimalist-decision-maker.web.app/"
     }
   ];
 
@@ -323,26 +323,32 @@ export default function Portfolio() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, idx) => (
-              <motion.div
+              <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.2 }}
-                className={`group relative flex flex-col justify-between p-8 rounded-2xl border backdrop-blur-sm transition-all hover:-translate-y-2 ${isDark ? "bg-slate-900/50 border-slate-800 hover:border-slate-700" : "bg-white/50 border-slate-200 hover:border-slate-300"}`}
+                className={`group relative flex flex-col justify-between p-8 rounded-2xl border backdrop-blur-sm transition-all hover:-translate-y-2 ${isDark ? "bg-slate-900/50 border-slate-800 hover:border-slate-700 hover:shadow-lg hover:shadow-blue-900/20" : "bg-white/50 border-slate-200 hover:border-slate-300 hover:shadow-lg hover:shadow-blue-100"}`}
               >
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <h3 className="text-xl font-bold flex items-center justify-between">
+                    {project.title}
+                    <span className={`transition-opacity opacity-0 group-hover:opacity-100 ${isDark ? "text-slate-400" : "text-slate-500"} transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300`}>↗</span>
+                  </h3>
                   <p className={`text-sm leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}>{project.description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-8">
                   {project.tech.map(tech => (
-                    <span key={tech} className={`text-xs px-2.5 py-1.5 rounded-md font-medium ${isDark ? "bg-slate-800 text-slate-300" : "bg-slate-100 text-slate-700"}`}>
+                    <span key={tech} className={`text-xs px-2.5 py-1.5 rounded-md font-medium transition-colors ${isDark ? "bg-slate-800 text-slate-300 group-hover:bg-slate-700" : "bg-slate-100 text-slate-700 group-hover:bg-slate-200"}`}>
                       {tech}
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </section>
