@@ -14,6 +14,8 @@ import {
   Search,
   Briefcase,
   GraduationCap,
+  FileText,
+  Download,
 } from "lucide-react";
 import Image from "next/image";
 import { AetherFlowHero } from "@/components/ui/aether-flow-hero";
@@ -228,17 +230,46 @@ export default function Portfolio() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="flex items-center justify-center md:justify-start gap-4 pt-4"
+              className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4"
             >
-              <a href="https://github.com/JustinDCosta" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
-                <Github size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/justindcosta" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
-                <Linkedin size={20} />
-              </a>
-              <a href="mailto:contact@justindcosta.dev" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
-                <Mail size={20} />
-              </a>
+              <div className="flex gap-4">
+                <a href="https://github.com/JustinDCosta" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
+                  <Github size={20} />
+                </a>
+                <a href="https://www.linkedin.com/in/justindcosta" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
+                  <Linkedin size={20} />
+                </a>
+                <a href="mailto:contact@justindcosta.dev" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-slate-700/50">
+                  <Mail size={20} />
+                </a>
+              </div>
+              
+              <div className="flex items-center justify-center gap-4 sm:ml-2">
+                <motion.a 
+                  whileHover={{ y: -2, scale: 1.02 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="/cv/Justin D'COSTA CV.pdf" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className={`group relative flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-bold transition-all text-sm overflow-hidden shadow-lg ${isDark ? "bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 text-blue-100 hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]" : "bg-gradient-to-r from-white to-slate-50 border border-slate-200 text-blue-900 hover:border-blue-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"}`}
+                >
+                  <span className={`absolute inset-0 w-full h-full bg-gradient-to-r ${isDark ? "from-blue-600/20 to-purple-600/20" : "from-blue-100 to-purple-100"} opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl pointer-events-none`}></span>
+                  <span className="relative z-10">{language === 'en' ? 'English CV' : 'CV Anglais'}</span>
+                  <Download size={16} className={`relative z-10 transition-all duration-300 ${isDark ? "text-blue-400 group-hover:text-blue-300" : "text-blue-600 group-hover:text-blue-500"} group-hover:translate-y-0.5 group-hover:scale-110`} />
+                </motion.a>
+                <motion.a 
+                  whileHover={{ y: -2, scale: 1.02 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="/cv/Justin D'COSTA FR CV.pdf" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className={`group relative flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-bold transition-all text-sm overflow-hidden shadow-lg ${isDark ? "bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 text-purple-100 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]" : "bg-gradient-to-r from-white to-slate-50 border border-slate-200 text-purple-900 hover:border-purple-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)]"}`}
+                >
+                  <span className={`absolute inset-0 w-full h-full bg-gradient-to-r ${isDark ? "from-purple-600/20 to-pink-600/20" : "from-purple-100 to-pink-100"} opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl pointer-events-none`}></span>
+                  <span className="relative z-10">{language === 'en' ? 'French CV' : 'CV Français'}</span>
+                  <Download size={16} className={`relative z-10 transition-all duration-300 ${isDark ? "text-purple-400 group-hover:text-purple-300" : "text-purple-600 group-hover:text-purple-500"} group-hover:translate-y-0.5 group-hover:scale-110`} />
+                </motion.a>
+              </div>
             </motion.div>
           </div>
 
