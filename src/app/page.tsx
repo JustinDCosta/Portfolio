@@ -155,14 +155,14 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${isDark ? "bg-slate-950 text-slate-50" : "bg-white text-slate-900"}`}>
+    <div className="min-h-screen transition-colors duration-500 bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-50">
       {/* Global Background */}
-      <div className={`fixed inset-0 z-0 pointer-events-none ${isDark ? "opacity-60 mix-blend-screen" : "opacity-80"}`}>
+      <div className="fixed inset-0 z-0 pointer-events-none opacity-80 mix-blend-multiply dark:opacity-60 dark:mix-blend-screen">
         <AetherFlowHero />
       </div>
 
       {/* Top Navbar */}
-      <nav className={`fixed top-0 w-full z-50 border-b backdrop-blur-sm transition-colors ${isDark ? "bg-slate-950/40 border-slate-800/50" : "bg-white/40 border-slate-200/50"}`}>
+      <nav className="fixed top-0 w-full z-50 border-b backdrop-blur-sm transition-colors bg-white/40 border-slate-200/50 dark:bg-slate-950/40 dark:border-slate-800/50">
         <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="z-10 w-1/4 flex items-center gap-4">
             <div className="font-bold text-xl tracking-tight">JD<span className="text-blue-500">.</span></div>

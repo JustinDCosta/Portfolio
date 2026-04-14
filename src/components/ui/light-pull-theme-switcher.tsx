@@ -1,16 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 
 export function LightPullThemeSwitcher() {
+    const { theme, setTheme, systemTheme } = useTheme();
+
     const toggleDarkMode = () => {
-        const root = document.documentElement;
-        if (root.classList.contains("dark")) {
-          root.classList.remove("dark");
-          localStorage.setItem("theme", "light");
+        const currentTheme = theme === "system" ? systemTheme : theme;
+        if (currentTheme === "dark") {
+          setTheme("light");
         } else {
-          root.classList.add("dark");
-          localStorage.setItem("theme", "dark");
+          setTheme("dark");
         }
     };
 
