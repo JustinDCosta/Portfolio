@@ -155,9 +155,9 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${isDark ? "bg-slate-950 text-slate-50" : "bg-slate-50 text-slate-900"}`}>
+    <div className={`min-h-screen transition-colors duration-500 ${isDark ? "bg-slate-950 text-slate-50" : "bg-white text-slate-900"}`}>
       {/* Global Background */}
-      <div className="fixed inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none">
+      <div className={`fixed inset-0 z-0 pointer-events-none ${isDark ? "opacity-60 mix-blend-screen" : "opacity-80"}`}>
         <AetherFlowHero />
       </div>
 

@@ -90,7 +90,7 @@ export const AetherFlowHero = ({ children }: { children?: React.ReactNode }) => 
                         let distance_mouse_a = Math.sqrt(dx_mouse_a*dx_mouse_a + dy_mouse_a*dy_mouse_a);
 
                         if (mouse.x && distance_mouse_a < mouse.radius) {
-                             ctx.strokeStyle = `rgba(255, 255, 255, ${opacityValue})`;
+                             ctx.strokeStyle = `rgba(160, 100, 255, ${opacityValue})`;
                         } else {
                              ctx.strokeStyle = `rgba(160, 100, 255, ${opacityValue * 0.5})`;
                         }
@@ -141,8 +141,8 @@ export const AetherFlowHero = ({ children }: { children?: React.ReactNode }) => 
     }, []);
 
     return (
-        <div className="relative w-full min-h-screen bg-background">
-            <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-30 z-0"></canvas>
+        <div className="relative w-full min-h-screen">
+            <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-60 z-0"></canvas>
             <div className="relative z-10 w-full">
                 {children}
             </div>
