@@ -224,6 +224,9 @@ export default function Portfolio() {
                   : 'Je suis un développeur Full Stack spécialisé dans les applications web hautement interactives et les architectures cloud robustes. En combinant des environnements front-end modernes avec une infrastructure back-end fiable, je transforme des problèmes complexes en expériences numériques fluides.'
                 }
               </p>
+              <p className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold mt-4 ${isDark ? "bg-emerald-500/15 text-emerald-300 border border-emerald-500/30" : "bg-emerald-100 text-emerald-800 border border-emerald-200"}`}>
+                {language === 'en' ? 'Available from June' : 'Disponible à partir de juin'}
+              </p>
             </motion.div>
             
             <motion.div
