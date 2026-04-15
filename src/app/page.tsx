@@ -225,7 +225,7 @@ export default function Portfolio() {
                 }
               </p>
               <p className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold mt-4 ${isDark ? "bg-emerald-500/15 text-emerald-300 border border-emerald-500/30" : "bg-emerald-100 text-emerald-800 border border-emerald-200"}`}>
-                {language === 'en' ? 'Available from June' : 'Disponible à partir de juin'}
+                {language === 'en' ? 'Available from June 2026' : 'Disponible à partir de juin 2026'}
               </p>
             </motion.div>
             
